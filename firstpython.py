@@ -39,3 +39,14 @@ numbers_x = [10, 20, 30, 40, 10]
 numbers_y = [75, 65, 35, 75, 30]
 firstLast(numbers_x)
 firstLast(numbers_y)
+
+
+def divisFive(numbers):
+    print()
+
+def subStringCount(string, subString):
+    print()
+
+def patternPrint():
+    print()
+
