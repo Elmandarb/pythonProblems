@@ -28,3 +28,14 @@ def evenChars():
             print(inputStr[i])
 
 evenChars()
+
+def firstLast(numbers):
+    if (numbers[0] == numbers[len(numbers)-1]):
+        print("True")
+    else :
+        print("False")
+
+numbers_x = [10, 20, 30, 40, 10]
+numbers_y = [75, 65, 35, 75, 30]
+firstLast(numbers_x)
+firstLast(numbers_y)
