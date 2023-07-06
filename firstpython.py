@@ -42,7 +42,11 @@ firstLast(numbers_y)
 
 
 def divisFive(numbers):
-    print()
+    for i in range(0,len(numbers)):
+        if ((numbers[i]%5) == 0):
+            print(numbers[i])
+
+divisFive([10, 20, 33, 46, 55])
 
 def subStringCount(string, subString):
     print()
