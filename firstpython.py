@@ -27,7 +27,7 @@ def evenChars():
         if (i % 2) == 0:
             print(inputStr[i])
 
-evenChars()
+#evenChars()
 
 def firstLast(numbers):
     if (numbers[0] == numbers[len(numbers)-1]):
@@ -49,7 +49,26 @@ def divisFive(numbers):
 divisFive([10, 20, 33, 46, 55])
 
 def subStringCount(string, subString):
-    print()
+    count = 0
+    if(len(subString)>len(string)):
+        print(0)
+    else:
+        for i in range(0, len(string)-len(subString)):
+            j = 0
+            running = True
+            #j in range(i,i+len(subString)):
+            while running:
+                if(j > i+len(subString)):
+                    running = False
+                if(string[i+j] != subString[j]):
+                    running = False
+                elif(j == len(subString)-1):
+                    count+=1
+                    running = False
+                j+=1
+        print("Substring Count is {0}".format(count))
+
+subStringCount("Emma is good developer. Emma is a writer","a")
 
 def patternPrint():
     print()
