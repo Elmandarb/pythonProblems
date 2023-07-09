@@ -71,5 +71,23 @@ def subStringCount(string, subString):
 subStringCount("Emma is good developer. Emma is a writer","a")
 
 def patternPrint():
-    print()
+    n = 6
+    i = 0
+    s = 1
+    while (s < n):
+        i = 0
+        while(i<s):
+            print("{0} ".format(s), end="")
+            i+=1
+        print("")
+        s+=1
+    
+patternPrint()
 
+def stutter(word):
+    for i in range(0 , 2):
+        print("{0}{1}...".format(word[0],word[1]), end="") 
+    print("{0}?".format(word))
+
+testWord = "incredible"
+stutter(testWord)
