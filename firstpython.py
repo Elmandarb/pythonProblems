@@ -91,3 +91,22 @@ def stutter(word):
 
 testWord = "incredible"
 stutter(testWord)
+
+def discount(price, disc):
+    disc = (100-disc)/100
+    price *= disc
+    round(price,2)
+    print(price)
+
+discount(89, 20)
+
+def invertColor(color):
+    first = 255-color[0]
+    second = 255-color[1]
+    third = 255-color[2]
+    retVal = tuple((first,second,third))
+    print(retVal)
+
+invertColor((0,0,0))
+invertColor((255,255,255))
+invertColor((165,170,221))
